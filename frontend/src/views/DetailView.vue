@@ -149,7 +149,7 @@ const formatTerm = (term: string) => {
   return term;
 };
 
-const presidentId = computed(() => parseInt(route.params.id as string) + 1);
+const presidentId = computed(() => parseInt(route.params.id as string));
 const president = computed(() => store.getPresidentById(presidentId.value));
 const chartRef = ref<HTMLElement | null>(null);
 let chart: echarts.ECharts | null = null;
