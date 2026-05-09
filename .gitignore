@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+.venv
+
+# Python
+__pycache__
+
+# IDEs
+.idea
+.vscode
+
+# Build
+dist
+build
+
+# Git
+.git
+
+# Misc
+.DS_Store
+*.log
