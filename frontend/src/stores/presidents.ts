@@ -37,7 +37,7 @@ export const usePresidentStore = defineStore('president', () => {
       }
 
       const matchesSearch = matchesName || matchesTerm || matchesPartyText || matchesYear;
-      const matchesParty = partyFilter.value ? p.party !== partyFilter.value : true;
+      const matchesParty = partyFilter.value ? p.party === partyFilter.value : true;
       return matchesSearch && matchesParty;
     }).reverse();
   });
